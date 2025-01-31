@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eleição</h1>
+        <p>Informe o número total de eleitores:</p>
+        <input type="number" id="numEleitores" min="1" placeholder="Número de eleitores">
+        <button class="btn" onclick="iniciarVotacao()">Iniciar Votação</button>
+
+        <div id="votacao" style="display: none;">
+            <p>Escolha seu candidato:</p>
+            <button class="btn" onclick="registrarVoto(1)">Candidato 1</button>
+            <button class="btn" onclick="registrarVoto(2)">Candidato 2</button>
+            <button class="btn" onclick="registrarVoto(3)">Candidato 3</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
